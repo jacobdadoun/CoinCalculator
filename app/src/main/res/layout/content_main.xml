@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainLandingPage"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/pennyCardView"
+        android:layout_width="82dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:clipChildren="false"
+        app:cardBackgroundColor="@color/secondaryLightColor"
+        app:cardCornerRadius="8dp"
+        app:cardUseCompatPadding="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/nickelCardView"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/instructionCardView"
+        app:layout_constraintVertical_bias="0.07">
+
+        <ImageView
+            android:id="@+id/pennyImageView"
+            android:layout_width="57dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="12dp"
+            android:adjustViewBounds="true"
+            android:clickable="false"
+            app:srcCompat="@drawable/penny" />
+
+        <EditText
+            android:id="@+id/pennyEditText"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:cursorVisible="true"
+            android:ems="10"
+            android:gravity="center_horizontal"
+            android:hapticFeedbackEnabled="true"
+            android:hint="@string/defaultHint"
+            android:inputType="numberDecimal"
+            android:textColor="@color/primaryTextColor"
+            android:textColorHint="@color/primaryTextColor" />
+
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/dimeCardView"
+        android:layout_width="82dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:clipChildren="false"
+        app:cardBackgroundColor="@color/secondaryLightColor"
+        app:cardCornerRadius="8dp"
+        app:cardUseCompatPadding="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/quarterCardView"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/nickelCardView"
+        app:layout_constraintTop_toBottomOf="@+id/instructionCardView"
+        app:layout_constraintVertical_bias="0.07">
+
+        <ImageView
+            android:id="@+id/dimeImageView"
+            android:layout_width="57dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="12dp"
+            android:adjustViewBounds="true"
+            app:srcCompat="@drawable/dime" />
+
+        <EditText
+            android:id="@+id/dimeEditText"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:ems="10"
+            android:gravity="center_horizontal"
+            android:hint="@string/defaultHint"
+            android:inputType="numberDecimal"
+            android:textColor="@color/primaryTextColor"
+            android:textColorHint="@color/primaryTextColor" />
+
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/nickelCardView"
+        android:layout_width="82dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:clipChildren="false"
+        app:cardBackgroundColor="@color/secondaryLightColor"
+        app:cardCornerRadius="8dp"
+        app:cardUseCompatPadding="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/dimeCardView"
+        app:layout_constraintStart_toEndOf="@+id/pennyCardView"
+        app:layout_constraintTop_toBottomOf="@+id/instructionCardView"
+        app:layout_constraintVertical_bias="0.07">
+
+        <ImageView
+            android:id="@+id/nickelImageView"
+            android:layout_width="57dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="12dp"
+            android:adjustViewBounds="true"
+            android:clickable="false"
+            app:srcCompat="@drawable/nickel" />
+
+        <EditText
+            android:id="@+id/nickelEditText"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:cursorVisible="false"
+            android:ems="10"
+            android:gravity="center_horizontal"
+            android:hint="@string/defaultHint"
+            android:inputType="numberDecimal"
+            android:textColor="@color/primaryTextColor"
+            android:textColorHint="@color/primaryTextColor" />
+
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/instructionCardView"
+        android:layout_width="291dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="15dp"
+        app:cardBackgroundColor="@color/secondaryLightColor"
+        app:cardCornerRadius="3dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/banner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:text="@string/please_enter_in_the_coin_count"
+            android:textColor="@color/primaryTextColor"
+            android:textSize="20sp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"/>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/quarterCardView"
+        android:layout_width="wrap_content"
+        android:layout_height="120dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginEnd="35dp"
+        android:layout_marginRight="35dp"
+        android:clipChildren="false"
+        app:cardBackgroundColor="@color/secondaryLightColor"
+        app:cardCornerRadius="8dp"
+        app:cardUseCompatPadding="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.50"
+        app:layout_constraintStart_toEndOf="@+id/dimeCardView"
+        app:layout_constraintTop_toBottomOf="@+id/instructionCardView"
+        app:layout_constraintVertical_bias="0.07">
+
+        <ImageView
+            android:id="@+id/quarterImageView"
+            android:layout_width="57dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="12dp"
+            android:adjustViewBounds="true"
+            android:clickable="false"
+            app:srcCompat="@drawable/quarter" />
+
+        <EditText
+            android:id="@+id/quarterEditText"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:cursorVisible="false"
+            android:ems="10"
+            android:gravity="center_horizontal"
+            android:hint="@string/defaultHint"
+            android:inputType="numberDecimal"
+            android:textColor="@color/primaryTextColor"
+            android:textColorHint="@color/primaryTextColor" />
+
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/statusBarTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/jd_initial"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

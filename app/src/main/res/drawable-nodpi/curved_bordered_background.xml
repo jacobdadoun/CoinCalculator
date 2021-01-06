@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <solid android:color="@color/colorDefaultBackground" />
+
+    <stroke android:width="@dimen/fab_margin"
+        android:color="@color/primaryTextColor"
+        />
+
+    <corners android:bottomRightRadius="@dimen/fab_margin"
+        android:bottomLeftRadius="@dimen/fab_margin"
+        android:topLeftRadius="@dimen/fab_margin"
+        android:topRightRadius="@dimen/fab_margin"/>
+</shape>

@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">CoinCounterJD</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- Strings used for fragments for navigation -->
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="defaultHint">0</string>
+    <string name="please_enter_in_the_coin_count">Please enter in the coin count:</string>
+    <string name="jd_initial">JD</string>
+    <string name="about_tab_string">About</string>
+    <string name="about_text">Coin Calculator V.1\nMade by Jacob Dadoun for the\nFinal Exam. jacobdadoun@gmail.com</string>
+    <string name="action_clearAll">Clear All</string>
+</resources>

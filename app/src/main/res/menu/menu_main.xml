@@ -1,0 +1,14 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.coincounterjd.MainActivity">
+    <item
+        android:id="@+id/action_clearAll"
+        android:icon="@android:drawable/stat_notify_sync"
+        android:title="@string/action_clearAll"
+        app:showAsAction="ifRoom|withText" />
+    <item
+        android:id="@+id/about_tab"
+        android:title="@string/about_tab_string"
+        app:showAsAction="never" />
+</menu>
